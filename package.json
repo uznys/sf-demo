@@ -1,0 +1,25 @@
+{
+  "name": "sf-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "test": "playwright test",
+    "test:ci": "cross-env CI=true npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@playwright/test": "^1.49.0",
+    "@stylistic/eslint-plugin": "^2.11.0",
+    "@types/node": "^22.9.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0",
+    "playwright-slack-report": "1.1.89",
+    "typescript-eslint": "^8.15.0"
+  }
+}
