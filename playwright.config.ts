@@ -1,5 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
+process.loadEnvFile('.env');
+
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
@@ -15,7 +17,7 @@ export default defineConfig({
       ? [
           './node_modules/playwright-slack-report/dist/src/SlackReporter.js',
           {
-            slackWebHookUrl: 'https://hooks.slack.com/services/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',
+            slackWebHookUrl: process.env.SLACK_WEBHOOK_URL,
             sendResults: 'always',
           },
         ]

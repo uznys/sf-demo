@@ -20,6 +20,14 @@ npx playwright show-report
 
 When running tests in CI, a message will be sent to Slack channel.
 
+If you want to trigger Slack notifications locally, create file `.env` in project root directory and add config:
+
+```ini
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/xxx/xxx/xxx
+```
+
+Then trigger the tests with CI config:
+
 ```shell
 npm run test:ci
 ```

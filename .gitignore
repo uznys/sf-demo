@@ -1,5 +1,6 @@
 task.pdf
 
+.env
 .vscode/
 
 node_modules/
